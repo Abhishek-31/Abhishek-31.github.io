@@ -1,1 +1,1 @@
-A Blog About My Coding Journey
+A log about my coding
