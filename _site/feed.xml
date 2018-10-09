@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Utkarsh Singh</title>
-    <description>I am ambitious because I know all the things that I aim for depend only on me and not on other people, luck, or on situation. Unlike the secondary stuff like people and attention, success doesn't depend much on the people you're around with.</description>
+    <title>Abhishek Agarwal</title>
+    <description>I try to learn things that I am unaware of and also I want to be expert in the fields I am interested in. I believe that hard work beats talent.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Fri, 23 Feb 2018 13:33:29 +0530</pubDate>
     <lastBuildDate>Fri, 23 Feb 2018 13:33:29 +0530</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
-    
+
       <item>
         <title>First Post</title>
         <description>&lt;p&gt;So I finally managed to open up a Blog on coding.
@@ -92,10 +92,10 @@ I think I should stop now since I have got a text of Communication Skills tomorr
         <pubDate>Fri, 23 Feb 2018 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2018/02/23/First-Post.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/02/23/First-Post.html</guid>
-        
-        
+
+
       </item>
-    
+
       <item>
         <title>Welcome to Jekyll!</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
@@ -116,13 +116,13 @@ I think I should stop now since I have got a text of Communication Skills tomorr
         <pubDate>Thu, 22 Feb 2018 16:17:49 +0530</pubDate>
         <link>http://localhost:4000/jekyll/update/2018/02/22/welcome-to-jekyll.html</link>
         <guid isPermaLink="true">http://localhost:4000/jekyll/update/2018/02/22/welcome-to-jekyll.html</guid>
-        
-        
+
+
         <category>jekyll</category>
-        
+
         <category>update</category>
-        
+
       </item>
-    
+
   </channel>
 </rss>
