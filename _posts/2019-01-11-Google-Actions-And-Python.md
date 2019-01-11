@@ -6,7 +6,7 @@ I am beginning to learn python and now I will be completing python basic tutoria
 There are four classes in python which are namely int,float,complex and str.
 We can check whether a number belongs to a class or not by simply checking for isinstance(number,class. ) Multiple lines are put in three quotes.
 Elseif is written as elif
-is is also used in place of ==
+is is also used in place of == but the difference is that "is" is used for checking both of the elements are referring to same object or not. If yes then true otherwise false whereas == checks for the value of both the operands. Generally these changes become visible in lists when you compare in lists.
 len(z) is used for lengths.
 range(10)means from 0 to 9
 range(5,8) means from 5 to 7(both inclusive)
@@ -17,6 +17,8 @@ IF nothinf is returned None is returned.
 if in function definition you are getting a variable you can inilIalize your variables there also. But if the values are passed into the functions then the value which are passed become the default values.
 It seems that the normal content in python is basically nothing but global platform fro variable. Man! this language is freaking simple.
 Unlike c or c++ or any language which takes time to learn , here in python we can send parameters in any order by just specifying which variable are you sending. Although the main program must not be knowing anything related to that variable.
+Strings are considered to have a true value when they are non empty
+
 
 
 #### 12:00 pm 
