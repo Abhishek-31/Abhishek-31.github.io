@@ -11,4 +11,4 @@ Started doing python tutorials.
 
 #####22.00pm
 
-Started doing STL. Will be completing it today.
+Started doing STL. Will be completing it today. Instead of using iterator in vector<int>::iterator,we can also use auto keyword. The only difference is that it will not be const iterator but a simple iterator
