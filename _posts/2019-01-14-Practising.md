@@ -14,7 +14,6 @@ Completed STL
 Went with the basics and what was meant to completed some months back. Will be tracking all the time from today onwards.
 Started with accessibility portion of first module of freecodecamp.
 
-Accesskeys in HTML are used to ake a shortcut for your website. suppose for nay element you have accesskeyso then you can press alt+shift+[accesskey] 
+#####16:07 pm
+Completed accessibility and responsive website modules of freecodecamp. Going to the club meeting. Break time AGAIN! :(
 
-Was testing the shortcuts and I found ctrl+k+z for full screen editor
-Was testing the shortcuts and I found ctrl+alt+v for your markdown preview.
