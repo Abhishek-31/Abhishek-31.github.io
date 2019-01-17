@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Completing projects
-date: 2019-01-14 09:29:00 -0600
+date: 2019-01-15 09:29:00 -0600
 ---
 
 ####Project Enthusiast
