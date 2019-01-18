@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: posts
 title: Completing projects
 date: 2019-01-15 09:29:00 -0600
----
+--- -->
 
 #### Project Enthusiast
 I realised that by making projects is the only way that I can master any skill. I really love project making and the journey it takes by making you learn various concepts. 
