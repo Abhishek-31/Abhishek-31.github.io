@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Completing projects
+title:Resumed Machine-Learning
 date: 2019-01-16 09:29:00 -0600
 ---
 
