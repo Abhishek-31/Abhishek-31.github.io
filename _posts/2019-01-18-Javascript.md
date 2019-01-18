@@ -5,7 +5,7 @@ date: 2019-01-18 10:17:00 -0600
 ---
 
 
-###Javascript and frontend 
+### Javascript and frontend 
 I have to stick to my daily goals so as to achieve my final goal and I have to complete that list of checkpoints.
 
 Not much to write in c/log of today but have to maintain daily github streak so here I am. Read about a new concept in Javascript that is known as ***Type Coercion*** and which means that whenever the values are compared then at that time type conversion takes place in which the concept is achieved by ````==```` sign but if you want strict equality comparision then you have to use ````===```` sign. Similarly, we can guess what is the meaning of ````!=```` and ````!==```` operators in JS.

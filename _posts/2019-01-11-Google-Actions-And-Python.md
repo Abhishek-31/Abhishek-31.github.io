@@ -1,6 +1,6 @@
-###Day well Spent making a google action and learning python basics
+### Day well Spent making a google action and learning python basics
 Today when I woke up I was just thinking on making a new Google Action. Although I am lagging from my plans on web deveopment but it was fun. I made a GOT quiz out there and it is out for production testing.
-####10.08am
+#### 10.08am
 I am beginning to learn python and now I will be completing python basic tutorials.
 
 There are four classes in python which are namely int,float,complex and str.
