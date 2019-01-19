@@ -1,7 +1,3 @@
----
-title: Completing JS Modules
----
-
 ### Javascript and frontend 
 I have to stick to my daily goals so as to achieve my final goal and I have to complete that list of checkpoints.
 
