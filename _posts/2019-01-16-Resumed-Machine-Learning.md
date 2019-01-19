@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: posts
 title: Resumed Machine-Learning
 date: 2019-01-16 11:30:00 -0600
----
+--- -->
 
 ##### 09:58am
 Despite wasting a lot of time on youtube, now resuming with Machine-Learning. Some of the lectures and some of the quizes were left which needs to be completed so as to get the certifications.
