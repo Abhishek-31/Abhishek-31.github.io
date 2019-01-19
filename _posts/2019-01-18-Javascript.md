@@ -1,7 +1,5 @@
 ---
-layout: posts
 title: Completing JS Modules
-date: 2019-01-18 10:17 -0600
 ---
 
 ### Javascript and frontend 
