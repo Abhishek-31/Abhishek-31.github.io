@@ -1,9 +1,8 @@
 ---
 layout: posts
 title: Completing JS Modules
-date: 2019-01-18 10:17:00 -0600
+date: 2019-01-18 10:17 -0600
 ---
-
 
 ### Javascript and frontend 
 I have to stick to my daily goals so as to achieve my final goal and I have to complete that list of checkpoints.
