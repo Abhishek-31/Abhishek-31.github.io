@@ -1,7 +1,7 @@
 ---
 layout: posts
-title:Resumed Machine-Learning
-date: 2019-01-16 09:29:00 -0600
+title: Resumed Machine-Learning
+date: 2019-01-16 11:30:00 -0600
 ---
 
 ##### 09:58am
