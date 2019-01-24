@@ -78,3 +78,6 @@ arr={1:"a",2:{1:"l",2:"u"}};
 for this we have const{2:{2"new_variable}}=arr;
 so now new_variable will contain "u".
 const[a,b,...arr]=arr2; 
+
+Only the fields which are required are to be sent in a function definition example you are sending an object then you just write important properties and rest of the properties are not used infact.
+
