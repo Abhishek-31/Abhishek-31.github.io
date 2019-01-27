@@ -81,3 +81,13 @@ const[a,b,...arr]=arr2;
 
 Only the fields which are required are to be sent in a function definition example you are sending an object then you just write important properties and rest of the properties are not used infact.
 
+.splice function taked three parameters in which starting two parameters mean the starting index and the no. of parameters to delete.
+ example, arr.splice(3,2);
+ it means 0..1..2..3 So the function will start from 3rd index and star deletig 2 elements that is now my arr does not contain 3rd index and 4rth index's material.
+ Also, splice returns the new array.
+
+There is another function s```slice``` which copies or extracts the information of that array and copies it into another array and this way, it helps to extract certain information. 
+It does not removes the elemeents and thus it lacks in third argument.
+The element at second argument is not taken into consideration
+ 
+ 
