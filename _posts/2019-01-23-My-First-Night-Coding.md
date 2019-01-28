@@ -1,4 +1,7 @@
 ### Inspiration
+
+<hr>
+
 I have watched many movies related to computer science and in them I have seen people waking yp all throughout the night and making shit happen through their hands and the same is gonna happen with me today. I have to code throughout the night to learn javascript and this is final. I attended internstalk and I feel like I am not doing anything. Like anything....
 
 #### 21:46 
@@ -9,8 +12,8 @@ you can use propert_name(params){body}.
 this. keyword is used for accessing different properties of the same object.
 
 I read a very important thing and that was that const does not mean truly immutable. This means that 
-````const a=5;
-a=10;````
+                ````const a=5;
+                a=10;````
 This will work as const allows declaration and deletion. Only modifications will not work example a++; will not work.
 Also, if you want to make anything truly constant then use Object.freeze(a);
 Facebook's immutable.js is made specifically for this purpose.
@@ -68,8 +71,13 @@ Also it can include 0-9 so finally in the brackets we have /[a-h0-6]at/
 
 So this can be used to get the words containing alphabets and numbers.
 ^ operator, caret character, helps in telling which all characters need not be counted.
-+ operator helps to return the consecutive occurences of that string ex /a+/ will return abhishek agarwalaaa "a","a","a","aaa"
-* operator is used for telling whether that particular string is even present or not.
+<hr>
+
++ \+ operator helps to return the consecutive occurences of that string ex /a+/ will return abhishek agarwalaaa "a","a","a","aaa"
++ \* operator is used for telling whether that particular string is even present or not.
+
+<hr>
+
 example regex=/go*/ will return go in go, gooooo in gooooo and g in gau and null in sand
 
 There are two types of regex and these are lazy and greedy.
@@ -118,4 +126,38 @@ $2 signifies second \w+ and thus this signifirs Camp
 This is another example.
 
 
-.trim() function helps in 
+.trim() function helps in removing the white spaces from and from beginning. So hola=hola.trim() will work.
+
+
+To reparate ^ and $ functionalities in javascript | funtion is too used sometimes.
+exapmple /^\s+|\s+$/g will give white spaces in starting and in end. Now g is used so that it is repeatedly checked till last.
+
+#### 25thJanuary-22:59
+
+Completed Regular Expressions. Started with **Debugging**
+<hr>
+
+##### 26th January 00:59
+Completed Debugging, Started with Basic Data Structures.
+If we want to copy the elements of an array into another we can use 
+````arr1=arr2````<br>
+
+Now if we want to repeat the copies of a single array into another array then what can I do ?
+<h5>Suppose we are having loop three times.</h5>
+
+                newArr.push(arr);<br>
+                OR newArr.push([...arr])
+
+Now if arr=[1,2,3] then newArr=[[1,2,3],[1,2,3],[1,2,3]]
+but if you do, ``` newArr.push(...arr)``` then it would be [1,2,3,1,2,3,1,2,3]. 
+
+arr.indexOf(element) is used to get the index of a particular element.
+
+delete obj.prop is used for deleting an object's property.
+
+Now hasOwnProperty and in keyword are used for checking whether any property is in the object or not. Suppose 
+
+                Object.hasOwnProperty(property_name);
+        OR      property in Object both results back in true.
+
+`.hasOwnProperty(prop1,prop2)` this is used for multiple properties.
