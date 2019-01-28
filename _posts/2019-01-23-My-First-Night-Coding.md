@@ -161,3 +161,10 @@ Now hasOwnProperty and in keyword are used for checking whether any property is 
         OR      property in Object both results back in true.
 
 `.hasOwnProperty(prop1,prop2)` this is used for multiple properties.
+
+
+#### 29th January 01:18
+
+Started with Javascript.
+
+Object.key(Property_name)
