@@ -80,7 +80,6 @@ so now new_variable will contain "u".
 const[a,b,...arr]=arr2; 
 
 Only the fields which are required are to be sent in a function definition example you are sending an object then you just write important properties and rest of the properties are not used infact.
-
 .splice function taked three parameters in which starting two parameters mean the starting index and the no. of parameters to delete.
  example, arr.splice(3,2);
  it means 0..1..2..3 So the function will start from 3rd index and star deletig 2 elements that is now my arr does not contain 3rd index and 4rth index's material.
@@ -90,4 +89,8 @@ There is another function s```slice``` which copies or extracts the information 
 It does not removes the elemeents and thus it lacks in third argument.
 The element at second argument is not taken into consideration
  
- 
+ Concat function will take arr1.concat(arr2) and will return concatenated array without mmodifying any of them.
+        
+        Difference between push and concat is that concat does not alter the original array whereas push modifies the original array anf=d also, push([5,6,7]) will give [arr_contents,[5,6,7]];
+        wherease concat will give[arr_contents,5,6,7];   and this just returns this. This does not mean that value will chan
+

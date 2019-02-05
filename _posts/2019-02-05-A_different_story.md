@@ -1,0 +1,6 @@
+### A Talk
+
+I talked with many people and that I learnt that from continuous efforts we can really make a bigger project that would uplift our technical skills. The course for javascript and the colt steele's course should be done with a greater speed. It is a matter of 43 hours and the backend is the matter of 27 hours which means that I have to spend complete three days in web development and that speed is completely impossible to achieve so for the time being I would be quitting my desire to complete web developer course by COlt Steele and would be contributing in javascript from the book and the backend and I would be completing this certification after some time. This is the only solution I am getting.
+ Also Goals that were written are to be followed religiously. Some days were well spent doing competitive coding and this built that confidence as well as a mirror to tell that we know nothing related to C++ and thus making me remember to do C++ from issued book as well. A lot of work coming for this month.
+ This is me calling off from a blog as I got a test tomorrow. So bye!
+ 

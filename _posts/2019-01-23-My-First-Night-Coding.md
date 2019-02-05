@@ -1,3 +1,6 @@
+
+# A long Blog about Javascript Data Structures And Algorithms
+
 ### Inspiration
 
 <hr>
@@ -51,7 +54,7 @@ str="abhishek is a good boy"
 substr.test(str); //will give true.
 This will giv true or false values and thus will tell whether the substring is present or not.
 
-Here ``alteration operaator`` | (single pipe) is used to do the work of OR operaror and thus this is the case.
+Here ````alteration operaator```` | (single pipe) is used to do the work of OR operaror and thus this is the case.
 Here if you use || so that won't work. Also you have to avoid unnecessary space between different OR operators.
 
 ```i flag``` are used for ignoring the case. Suppose regex=/abhishek/i will return true for abhishek, Abhishek, aBhIsHeK also.
@@ -165,6 +168,311 @@ Now hasOwnProperty and in keyword are used for checking whether any property is 
 
 #### 29th January 01:18
 
+
+I have to learn machine learning but before it, I need to complete what looks more attractive in the present time and that is web development. Let's quickly cover it. So I am giving three days for web development in which backend and frontend will be completed.
+
 Started with Javascript.
 
 Object.key(Property_name)
+```let user in obj``` : THis is used for iterating inside a for loop as the objects do not have indexes as arrays does.
+
+
+.split('')breaks a string into an array of characters and then .join('') turns it back into a string and then .reverse reverses a string.
+Strings are not saved as arraysbut can be converted into one by .split('')
+So to reverse a string str,
+```str.split('').reverse().join('');```
+
+Learnt how to create a slug url. 
+
+
+#### 29th January 12:58
+
+Completed Basic Data structres
+
+#### 18:35
+
+Started with replace function. In the second parameter we can either send a new value or a function which will return a new value.
+
+As the strings are immutable so replace function works in changing any character in strings.
+To convert any string into character array we have to use str.split("") and then after it we can use as we did in character array. Only .length is to be used. Then to combine these broken strings, we can use .join keyword.
+
+You can use splice to insert elements. For that you have to use str.splice(index_at_which to enter,0,element to insert)
+
+example:- str.splice(4,0,'may')
+at 4th index may will come
+For replacing the elements by using splice(n,1,new_element)
+at nth index new_element will come. by replacing one element.
+
+
+If you just use = sign in arrays then it copies the address og both so use ```str1=str2.splice();``` This will help you in duplicating the string and returns a new array.
+
+Splice modifies the string and if only one parameter is passed then all the elements after that index everything is vanished.
+
+
+split and splice are functions of strings so they won't work on strings. However if you have to use in strings then forstly using split("") convert them into arrays and then apply sklice or splice.
+
+At any time if you want to remove any false value from any array arr, you can use arr.filter(Boolean).
+It just takes the truthfull values in arr and returns it.
+
+In reduce function we have a callback fuucntion which can have upto four arguments. This is accumulator, element, current index, array.
+
+arr.reduce((acc,v)=>{function_body return acc},initial_value)
+This will give you the value if acumulato.
+
+Suppose you have to use regexp in a variable such that /Variable_content/, then you can use 
+
+                var Regex_name= new RegExp(Variable_name);
+
+Second parameter of this type will give you the g or i flag. so suppose you have to check in which it does not matter if it is case sensitive or not then you can use,
+second parameter as "i".
+
+                var Regex_name= new RegExp(Variable_name);
+
+
+Whenever you have to **interpolate** any variable inside a string output/message, you have to use backticks and then inside those backticks you have to use ${variable_name};
+
+Constructor functions are used for creating the objects hence in their body keywords like this. are used.
+All the objects made by a constructor function are said to be instances of that constructor and thus js provides ways to check that whether object was created with the help of that constructor function or not by instanceof operator 
+
+
+crow instanceof Bird // was crow created using the constructor function Bird or not. If it was not created using the Bird function then it will return false.
+Even if it has same properties then too if new keyword was not used, It will return false.
+
+
+Now suppose you are making an object through constructor function. Then in that if a variable is present then all the instances of that function will have duplicated value and now suppose there are a lot of objects. Then in that case prototypes are used in which function_name.prototype.prop=prop_value;
+Now this prop is shared among all the objects created by function_name.
+But now the values which are added by prototype are not its individual properties so if we check for hasOwnProperty(shared_prop), then it would result in false.
+                                function Dog(name) {
+                                this.name = name;
+                                }
+
+                                Dog.prototype.numLegs = 4;
+
+                                let beagle = new Dog("Snoopy");
+
+                                let ownProps = [];
+                                let prototypeProps = [];
+
+                                // Add your code below this line 
+                                for (let property in beagle) {
+                                if(Dog.hasOwnProperty(property)) {
+                                ownProps.push(property)
+                                }
+                                else {
+                                prototypeProps.push(property)
+                                }
+                                }
+
+instanceof of prototype properties also gives true 
+.constructor also stores the construction function used to make that object but constructor property can be overwritten and thus, this is not gonna help you even a bit.
+
+Now if we start using prototyping then it is good if we equalize an object for a prototype. Through this way we can supply properties for our object, That is,
+Dog.prototype={
+        prop_1: value,
+        method_1:function(){
+
+        }
+        method_2:function(){
+
+        }
+}
+But this way is dangerous as in this constructor value is deleted and undefined will come if we do object.constructor so remember in this way, always use constructor property and explicitly define it as the value of which the object was an instanceof.
+
+To check whether the protype is inhereted or not 
+parent.prototype.isprototypeof(child);
+
+typeof prototype of any construction function is of object. and so function.prototype.protype will also exist and that is object.prototype which is universal superset for all construction functions. hasOwnProperty is present in Object.prototype
+For inheriting a property you have to create an instance of that function through which a property is made .
+That is suppose
+function Dog(){
+        name="Abhishek",
+        dob="31-10-1999"
+}
+function Cat(){
+        name="agarwal",
+        dob="31-10-1999"
+}
+Now suppose if you were to make all the Dog instances with different name but same dob then we could have used Dog.prototype.dob="31-10-1999";
+BUt now suppose different construction functions' objects have same properties then for that we could use 
+function 
+
+                                        ````Group.prototype(){}````
+                                ````Construction_function.prototype=Object.create(Group.prototype);````
+
+
+where group is a constructor function which contains same properties in different objects.
+
+
+BUt this way you are again compromising with the properties and so this way is used walong with Construction_function.prototype.constructor=original function name without parenthesis
+
+Another way for this is by using a mixin where you send an object and that  function on its own gives your object a property.
+for this: function mixin_name(obj){
+obj.method_name=function(){}'
+obj.property_name=value;
+}
+
+
+Now if we are making anything in the object of the form let obj={a:something,b:something};
+Then outside we can change it like obj.a=something_else;
+To prevent this we can declare a variable inside the constructor function and  a property with this. keyword that returns variable_name and this way variables can be changed only through those functions and not by the keyword itelf.
+
+Whenever anything is declared for the object inside constructor function then we do not have to use let keyword. Just this. will work but in the case of constructor and an variable(property) is made for that object.
+
+Functions that can be assigned to a variable, passed into another function, or returned from another function just like any other normal value, are called first class functions. In JavaScript, all functions are first class functions.
+
+#### Different types of functions
+
+Callbacks are the functions that are slipped or passed into another function to decide the invocation of that function. You may have seen them passed to other methods, for example in filter, the callback function tells JavaScript the criteria for how to filter an array.
+
+The functions that take a function as an argument, or return a function as a return value are called higher order functions.
+
+When the functions are passed in to another function or returned from another function, then those functions which gets passed in or returned can be called a lambda.
+
+In Functional Programming, you can;t change anything unexpected and this thus helps as as bugs decrease and this can lead to our solution
+
+Equalizing two arrays like arr1=arr2 will make an alias name for arr2 and that is with name arr1.
+But, you should use arr1=[...arr2]. This will create a new instance of that array.Changes making in arr1 will not affect arr2 in this case otherwise it would have changed the answer.
+
+
+
+Suppose you have to use .map function in javascript then, you can use .map(function(val){return anything});
+
+Implementing my own map function
+                                var str=[1,2,3,4];
+                                str.myMap(function(a){return 2*a});
+                                Array.prototype.myMap=function(callback)
+                                {
+                                        var newarr=[];
+                                        this.forEach((a)=>{newarr.push(callback(a))});
+                                        return newarr;
+                                }
+Implementing my own filter method.
+                                Array.prototype.myFilter = function(callback){
+                                 var newArray = [];
+                                for (let i=0; i<this.length;i++){
+                                if(callback(this[i])=== true ){
+                                newArray.push(this[i]);
+                                }
+                                }
+                                
+                                return newArray;
+
+                                };
+
+                                var new_s = s.myFilter(function(item){
+                                return item % 2 === 1;
+                                });
+
+                                
+These functions which are map and filter can be replaced by a for loop or a .forEach function.
+
+
+#### 31st January 02:11 am                                
+
+Still doing Javascript. Running days late according to the plans, but atleast something is happening which is of greater interest for me.
+
+splice(start,end) return elements starting from start to end-1 index and crops the same from original array.(or if correct visualization is what is needed then splice starts fro index and takes end no. of elements and thus including startth index.)
+splice(one) will return elements starting from one to n-1 index. So if you have to remove an element you can use splice(4,1);
+slice takes starting element index and final element index+1.
+Whereas splice means the number of elements of 
+
+Can call it a day. This is me Abhishek Agarwal signing off.
+
+#### 31st January 19:50 pm
+
+If you are passing and array into a function and thnen modifying it in any way then changes are visible. If you want to make changes in an instance and not in the Global Value of that array then equalise it with an array variable by using spread operator.
+
+Also, if you are sending a variable then any change in it will not be visible in global instance.
+Also, if ou are sending an object and equalizing it to any variable then also changes to that variable will show changes in original instance also so to prevent it we have 
+                                
+                                newobj_name={...oldobj_name}
+
+Or the another way for arrays duplication is to use .slice() function which returns a new array.
+
+In splice both arguments are inclusive and thus it means that if 
+                                
+                                str="[1,2,3,4];
+                                str.slice(0,2); 
+                                //will give 1,2 
+                                whereas 
+                                str.splice(0,2); 
+                                //will give 1,2,3;
+
+Second argunment of splice gives the no. of elements to bee taken into picture.
+
+.every is used to check fo reach element in an array a condition specified by a function. If all the elemeents of that function satifies the property then true is returned else false is returned. It works with arrays.
+
+arr.every(function(curvalue){return curvalue>0;}); This will give you true only when all values are bigger than 0.
+
+similarly .some function is used for checking if atleast one element is present which follows that property.
+
+````.includes```` is a function that returns true or false whether arr.includes(i) is true or not. If it is true then, 
+
+Array.prototype.slice.call(arguments) will return an array of arguments. Also, you can use ...arr so as to make an array name arr and that consists of all arrays,
+
+Or Array.from(arguments); will return array of all arguments.
+
+
+##### Using Delete operation
+
+After deleting any array's element which you can do with the help of delete keyword as delete arr[i],You should use array.filter(Boolean) as delete actually creates null at that point.
+
+So removing all with Boolean as false will really help.
+
+Object.keys make an array of any object's keys. That is very useful so use Object.keys(source) so as to make an array of keys of any object named source,
+
+Always remember that object's keys are accessed through square brackets and not by parenthesis.
+````.every```` function demands a callback function which checks for every element a condition where we return true or false. As soon as a false is returned, .every will break on its own and thus false in lst is returned whereas if true is returned then it is firstly checked whether all are returning true. If yes then in last true is returned
+
+                                function whatIsInAName(collection, source) {
+                                // What's in a name?
+                                var lama=Object.keys(source);
+                                var arr = [];
+                                // Only change code below this line
+                                arr = collection.filter((x)=>lama.every(function(a){if(x.hasOwnProperty(a)&&x[a]===source[a])
+                                return true;
+                                else return false;}
+                                )
+                                );
+                                
+                                // Only change code above this line
+                                return arr;
+                                }
+
+
+
+##### Difference between .forEach and .map
+
+````.forEach```` does not return anything and so must be used when you just want to do something through all the elements of an array.<br>
+Whereas map does change the value and hence must be used if you want to change values so that you can assign the value of returned array into something else.
+
+In regex followed by is used by ?=[whatever] and this brings he cursor before whatever and thus this is useful we can add choices through ?=" "|_|[A-Z]. But this will work only when ?=[] is enclosed within parenthesis.
+
+[] square bracket is the alternative for | operator
+a|e|i|o|u is equivalent to [aeiou].
+
+.match() keyword in regex returns an array of all occurences given in regex in a array.
+
+We can replace slice with suubstr and that produces same results.
+
+
+.includes work with string and arrays.
+
+##### Difference between .charAt and []
+.charAt is specific to strings and moreover [] is kind of primitive and it does not work in IE7. Although you know that you would be using [] but .charAt is better if only strings are conidered.
+
+.charCodeAt works with a string and in the brackets I need to give the index which is required for getting the ASCII value.
+
+str.charCodeAt(index); 
+String.fromCharCode(ASCII) code returns the string.
+However fromCharCode() expects a series of numbers rather than an Array!. So if you have any array of number.
+
+//Read about sets in javascript.
+
+Always use shift or pop to delete the elements from ends as usinf delete operator creates vacant spaces in an array and thus the array in return is known as sparse arrays.
+
+Array.isArray(arr) is used to check whether arr is array or not and also it can be used inside an array with .some function so as to convert .some() into .some(Array.isArray) and this on its own sends data into the function and performs function.
+It is like .forEach() as it just takes the name of the function and on its own gives the values to it.
+
+.parseInt function takes string as the first parameter and the second parameter is optional which is basically the base from which conversion has to take place( the base of first parameter) and returns the integer(decimal) value.
+
