@@ -41,10 +41,10 @@ console.log("Fuck off")
 ```
 
 
-This is because of a phenomenon, _hoisting_. 
+This is because of a phenomenon, _hoisting_.
 
 Execution context is created in two phases.
-1. Creation phase: Global object, this, outer environment set up. It also setups memory space and function and this is known as hoisting. Before code, gets executed line by line, the engine has allotted space for variables and functions and when it gets executed , it has already allotted space. Now variables and functions, functions has all the space alotted for its name and content also and so while executing, we expect that everything gets runned. In the case of variables, the values are alotted in execution phase and a placeholder is set as undefined. 
+1. Creation phase: Global object, this, outer environment set up. It also setups memory space and function and this is known as hoisting. Before code, gets executed line by line, the engine has allotted space for variables and functions and when it gets executed , it has already allotted space. Now variables and functions, functions has all the space alotted for its name and content also and so while executing, we expect that everything gets runned. In the case of variables, the values are alotted in execution phase and a placeholder is set as undefined.
 
 2. Execution phase: Told earlier.
 
@@ -83,7 +83,7 @@ easy-peasy
 
 
 Although we have heard about Asynchronous requests, yep, AJAX.
-Javascript is synchronous and it runs code in a sequence. 
+Javascript is synchronous and it runs code in a sequence.
 
 ### Invocation
 
@@ -122,7 +122,7 @@ var varchar=1
 a()
 ```
 
-This will give output as 8. 
+This will give output as 8.
 
 
 ```
@@ -166,7 +166,7 @@ function a()
 {
     console.log(varchar);
 }
-    
+
     b()
     var varchar=3
 }
@@ -184,10 +184,10 @@ function a()
 {
     console.log(varchar);
 }
-   
+
     var varchar=3
     b()
-   
+
 }
 
 var varchar=1
@@ -203,16 +203,16 @@ function a()
 {
     console.log(varchar);
 }
-   
+
     var varchar
     b()
-   
+
 }
 
 var varchar=1
 a()
 ```
- 
+
 Here undefined is given as output.
 
 ### let vs var
@@ -276,7 +276,7 @@ This is because when we write normal varchar, then it references to the one acco
 ```
 function b()
 {
-    
+
 function a()
 {
 
@@ -288,7 +288,7 @@ console.log(varchar)
 a()
 console.log(varchar)
 }
-    
+
 var varchar=1
 console.log(varchar);
 
@@ -306,8 +306,8 @@ console.log(varchar);
 ### Event Loop and Asynchronous functionalities.
 
 So long we've been talking about the contexts. All this is taken care by the runtime of various engines and in the case of Chrome its V8 engine. So basically there is heap and stack. setTimeOut, DOM, HTML Requests and these are not present in V8!
-Web APIS are extra things that our browsers actually provide us and these has setTimeOut, DOM and HTML Requests. Then there is event loop and callback queue. 
-Single Thread means that the language has a single call stack and that everything gets through that stack only. 
+Web APIS are extra things that our browsers actually provide us and these has setTimeOut, DOM and HTML Requests. Then there is event loop and callback queue.
+Single Thread means that the language has a single call stack and that everything gets through that stack only.
 
 ```
 function foo(){
@@ -322,7 +322,7 @@ function baz(){
 baz();
 ```
 Inside console:
-UncaughtError: Oops<br> 
+UncaughtError: Oops<br>
 foo<br>
 bar<br>
 baz<br>
@@ -349,7 +349,7 @@ Now this statement setTimeout.... is pushed into stack and as it is the webapi, 
 ```
 console.log("Hi")
 function b(){
-    
+
     setTimeout(function f(){
         console.log("Check");
     },1000);
@@ -372,7 +372,7 @@ Check3<br>
 Check<br>
 
 
-So, just for an example, we have .forEach function which is synchronous. We can write an asynchronous version of .forEach utility also. 
+So, just for an example, we have .forEach function which is synchronous. We can write an asynchronous version of .forEach utility also.
 ```
 [1,2,3,4,5].forEach(function(i){console.log(i)});
 ```
@@ -393,7 +393,7 @@ function asyncforeach(array,cb){
 
 ### Types and Javascript
 
-_Dynamic Typing_ is the technique in which we do not tell what is the type of the variable but the engine recognises it all by itself. A vaiable can hold different type of values, because the typing is decided at execution time but in case of _Static Typing_, the variable has the fixed type, that is the case in C++. 
+_Dynamic Typing_ is the technique in which we do not tell what is the type of the variable but the engine recognises it all by itself. A vaiable can hold different type of values, because the typing is decided at execution time but in case of _Static Typing_, the variable has the fixed type, that is the case in C++.
 Different types of data in which a variable can be stored:
 
 Primtive type is a single value. We know that a object is a name, value pair but primitive type is a single value and Javascript has 6 types of primtitve types:<br>
@@ -403,7 +403,7 @@ Primtive type is a single value. We know that a object is a name, value pair but
 3.Boolean: "true" or "false"<br>
 4.Number: javascipt has only this type for numerical figures and this is floating decimal point number and at times it can make maths weird.<br>
 5.String: A sequence of characters. Both ' ' and " " can be used. <br>
-6.Symbol: Used in ES6. We will not talk about it here. 
+6.Symbol: Used in ES6. We will not talk about it here.
 ```
 
 
@@ -412,18 +412,49 @@ Primtive type is a single value. We know that a object is a name, value pair but
 It is a function that is syntactically written in some other manner.
 
 >> Operator precedence and associativity:
-Functions are called in according to the precedence and associativity of those operators. When the operator functions have same precedence, then in that case associativity kicks in. 
+Functions are called in according to the precedence and associativity of those operators. When the operator functions have same precedence, then in that case associativity kicks in.
 
         console.log(a=5) _This will output 5 in the screen_
 
 As operators have the property of a function, that's why it returns some value to screen.
 
 
+ 
+### Coercion
+
+Converting one type into another type. This happens frequently in javascript because it is dynamically typed language.
+
+'+'
++ adds two numbers
++ concatenate strings
++ treats number as string:  1 + '2'='12'
+
+Please remember that coercion is something that is constantly happening whenever different types are used with operators. 
+
+>> Output of the following statement: ```console.log(1<2<3)``` This will output into true. But ```console.log(3<2<1)```. The output will be true because 3<2 gives 0 as this is false which is less than 1 so that all works.
+
+There is a function Number() and this tells that Number(true)=1.
+This is all coercion. 
+Okay, so whenever the expression does not explicitly return anything, we get undefined as output. So some standard functions such as console.log(5) gives 5 and undefined because 5 is printed but as nothing is returned by console.log so undefined.
+
+Number(undefined) return ==NaN==. So undefined cannot be coerced so it returns NaN, which is not primtive data type but can be used as one. Further Number(null) return 0. There are times when we don't want coercion. We can check the type by "===" sign in javascript.
+
+> 3 == 3 return true.
+> "3" == 3 return true.
+> var a == false;
+> a == 0 returns true;
+> ==There are some exceptions such as null == 0. Here null is not coerced to 0 and hance this will result in false. But in some other cases such as null < 1, null is coerced into 0.==
+>""==false this will give true
+>""==0
+If you want to avoid this game of coercion, use ```===```
+
+==So generally use === in your code.==
+
+NaN != NaN and NaN !==NaN
+
+==Much better than === is Object.is(op1,op2)
+This return false with +0,-0 and return true with NaN,NaN. and for rest of the cases, it give same result as === .== 
 
 
 
-
-S
-
-
-
+This is me signing off. I'll be talking to my bae, Saumya now. I love you babe... I know you will not be reading this ever :P
