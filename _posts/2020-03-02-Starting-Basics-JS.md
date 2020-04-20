@@ -437,24 +437,21 @@ There is a function Number() and this tells that Number(true)=1.
 This is all coercion. 
 Okay, so whenever the expression does not explicitly return anything, we get undefined as output. So some standard functions such as console.log(5) gives 5 and undefined because 5 is printed but as nothing is returned by console.log so undefined.
 
-Number(undefined) return ==NaN==. So undefined cannot be coerced so it returns NaN, which is not primtive data type but can be used as one. Further Number(null) return 0. There are times when we don't want coercion. We can check the type by "===" sign in javascript.
+Number(undefined) return NaN. So undefined cannot be coerced so it returns NaN, which is not primtive data type but can be used as one. Further Number(null) return 0. There are times when we don't want coercion. We can check the type by "===" sign in javascript.
 
 > 3 == 3 return true.
 > "3" == 3 return true.
 > var a == false;
 > a == 0 returns true;
-> ==There are some exceptions such as null == 0. Here null is not coerced to 0 and hance this will result in false. But in some other cases such as null < 1, null is coerced into 0.==
+> There are some exceptions such as null == 0. Here null is not coerced to 0 and hance this will result in false. But in some other cases such as null < 1, null is coerced into 0.
 >""==false this will give true
 >""==0
 If you want to avoid this game of coercion, use ```===```
 
-==So generally use === in your code.==
+So generally use === in your code.
 
 NaN != NaN and NaN !==NaN
 
-==Much better than === is Object.is(op1,op2)
-This return false with +0,-0 and return true with NaN,NaN. and for rest of the cases, it give same result as === .== 
+Much better than === is Object.is(op1,op2)
+This return false with +0,-0 and return true with NaN,NaN. and for rest of the cases, it give same result as === .
 
-
-
-This is me signing off. I'll be talking to my bae, Saumya now. I love you babe... I know you will never read this :P
