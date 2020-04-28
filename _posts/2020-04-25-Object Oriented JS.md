@@ -13,7 +13,7 @@ Inheritance: One object gets access to the properties and methods of second obje
 Whenever we find any prooperty linked to an object, firstly the engine finds it in the direct level of the object but later it finds it in the subobjects linked through prototype property. 
 This is known as prototype chain.
 
-![Image](..\_includes\Proto.png)
+![Image](../_includes/Proto.png)
 
 Thus through this way, we can actually call properties linked by prototype chain.
 
